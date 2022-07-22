@@ -1,0 +1,34 @@
+<div class="container">
+    <ul>
+        <li *ngFor="let food of foods">
+            <div>
+                <img src="{{ food.image }}" alt="">
+            </div>
+                <div>
+                    <a>
+                        {{ food.name }}
+                    </a>
+                </div>
+                <div class="addItem">
+                    <button class="removeButton" click="addPepperoniPizza()">-</button>
+                    <div>0</div>
+                    <button class="addButton" click="addPepperoniPizza()">+</button>
+                </div>
+                
+            <div>
+                $120.00
+            </div>
+        </li>
+    </ul>
+
+    <div class="checkout">
+        <div>
+            <div class="foods-count">2</div>
+            <div class="total-price">$240.00</div>
+        </div>
+        <button class="check-out-button">Check-Out</button>
+    </div>
+    
+</div>
+
+
